@@ -66,7 +66,7 @@
 
             <div class="campo">
                 <label for="nascimento">nascimento</label>
-                <input type="date" name="nascimento" id="nasciment">
+                <input type="date" name="nascimento" id="nasciment" max="2020-03-05" min="1900-01-01">
             </div>
 
             <div class="campo">
@@ -79,7 +79,7 @@
             </div>
 
             <fleldset>
-                <legred>Sexo</legred>
+                <legend>Sexo</legend>
                 <input type="radio" name="sexo" value="N" id="Masilino">
                 <label for="Masculino">Masculino</label>
 
@@ -89,12 +89,14 @@
                 
             </fleldset>
 
+            <div class="campo termos"></div>
             <input type="checkbox" name="check"  id="check">
             <label for="check">
                 declaro que li e aceito os termos de uso desse site
             </label>
+        </div>
 
-            <button type="submit">cadastrar</button>
+            <button type="submit" class="btn gradient">cadastrar</button>
 
         </form>
 
