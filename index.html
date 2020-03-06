@@ -14,10 +14,15 @@
 
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="Imagens/logo.svg" alt="logo do site E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html">
+                    <img src="Imagens/logo.svg" alt="logo do site E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="voltar para pagina inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="ir até a sessão de resultadosdas partidas">HORÁRIOS</a></li>
@@ -27,7 +32,7 @@
                         <a href="#" title="Buscar conteudo no site">
                             <i class="fas fa-search"></i>
                         </a>
-                        
+
                     </li>
                 </ul>
 
@@ -105,58 +110,58 @@
                 <div class="card">
                     <img src="Imagens/Teams/T10.jpg" alt="noticia sobre 1">
                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas?</p>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas?</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="Imagens/Teams/T2.jpg" alt="noticia sobre 1">
                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas?</p>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas?</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="Imagens/Teams/T3.jpeg" alt="noticia sobre 1">
                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas?</p>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas?</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="Imagens/Teams/T4.jpg" alt="noticia sobre 1">
-                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas? </p>
+                    <div>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas? </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="Imagens/Teams/T5.jpeg" alt="noticia sobre 1">
                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas?</p>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas?</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="Imagens/Teams/T6.jpg" alt="noticia sobre 1">
                     <div>
-                    <h4>Título da Noticia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
-                        voluptatem possimus autem fugit necessitatibus voluptas? </p>
+                        <h4>Título da Noticia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, debitis exercitationem
+                            voluptatem possimus autem fugit necessitatibus voluptas? </p>
                     </div>
                 </div>
 
-             </section>
+            </section>
 
             <section class="recentes">
                 <h3>PARTIDAS RECENTES</h3>
@@ -249,7 +254,7 @@
                 <h5>INSTITUCIONAL</h5>
                 <nav>
                     <ul>
-                        <li><a href="#">Fale Conosco</a></li> 
+                        <li><a href="#">Fale Conosco</a></li>
                         <li><a href="#">Regras</a></li>
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Política de Privacidade</a></li>
@@ -258,7 +263,7 @@
                     </ul>
                 </nav>
             </div>
-            
+
             <div class="mob_logo_sociais">
                 <img src="imagens/Logo.svg" alt="logo do projeto e-players">
                 <div class="sociais">
@@ -269,7 +274,7 @@
 
                 </div>
             </div>
-            
+
             <div>
                 <h5>PRINCIPAIS LIGAS</h5>
                 <h6>LIGA CBL</h6>
@@ -279,6 +284,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        function botaoMenu() {
+            var m = document.getElementById("menu");
+            if (m.style.display == "block") {
+                m.style.display = "none";
+        
+            } else {
+                m.style.display = "block";
+        
+            }
+        }
+
+    </script>
 </body>
 
 </html>
